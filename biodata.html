@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+
+    <title>
+    Percentage calculator
+  </title>
+
+  <script type="text/javascript">
+
+    const ShowBioData =()=>
+    {
+      let fname= document.getElementById('fname').value;
+      let lname=document.getElementById('lname').value;
+      let edu=document.getElementById('edu').value;
+      let dob=document.getElementById('dob').value;
+      let country=document.getElementById('country').value;
+      document.getElementById('data').innerHTML=`Your name is ${fname + lname} and Your Education is ${edu} and your date of birth is ${dob} you are from ${country}`;
+      document.getElementById('thanks').innerHTML=`Thanks for visiting our website ${fname}`;
+    }
+  </script>
+
+  </head>
+  <body>
+    <h1> Bio Data </h1>
+    <br>
+    <form style="background-color:#8c7022" >
+
+    <br> <hr>
+
+
+
+    <div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    <label for="Education">Your Education</label>
+    <input type="text" id="edu" name="lastname" placeholder="Your Education">
+    <label for="Date">Your Date Of Birth</label>
+    <input type="text" id="dob" name="lastname" placeholder="Your Education">
+    <label for="country">Country</label>
+    <select id="country" name="country">
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+
+
+
+
+
+  </form>
+</div>
+
+    <div style="margin:35px 0 0px 100px">
+
+      <input type="button" value="Show" onclick="ShowBioData()">
+
+      <p id="data"> </p>
+      <h1 id=thanks> <h1>
+      </div>
+      <hr>
+
+<form>
+  </body>
+</html>
